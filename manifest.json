@@ -1,0 +1,11 @@
+{
+	"id": "obsi-style",
+	"name": "ObsiStyle",
+	"version": "1.0.0",
+	"minAppVersion": "0.15.0",
+	"description": "Customize Obsidian with your own themes and matching pen colors.",
+	"author": "ZeroDark",
+	"authorUrl": "https://github.com/ZeroDark-0",
+	"fundingUrl": "https://buymeacoffee.com/zerodark",
+	"isDesktopOnly": false
+}
