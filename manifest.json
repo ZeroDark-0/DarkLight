@@ -1,6 +1,6 @@
 {
-	"id": "obsi-style",
-	"name": "ObsiStyle",
+	"id": "darklight",
+	"name": "DarkLight",
 	"version": "1.0.0",
 	"minAppVersion": "0.15.0",
 	"description": "Customize Obsidian with your own themes and matching pen colors.",

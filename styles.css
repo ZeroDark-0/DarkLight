@@ -1,8 +1,78 @@
-/*
+/* ==========================
+   DARKLIGHT PLUGIN - STYLES
+   ========================== */
 
-This CSS file will be included with your plugin, and
-available in the app when your plugin is enabled.
+/* Global Theme Variables */
+:root {
+	/* Darklight Pen Colors */
+	--darklight-pen-white: #f8f9fa;
+	--darklight-pen-gray: #6c757d;
+	--darklight-pen-black: #121212;
+	--darklight-pen-red: #ff4c4c;
+	--darklight-pen-green: #00c853;
+	--darklight-pen-blue: #448aff;
+	--darklight-pen-purple: #9c27b0;
 
-If your plugin does not need CSS, delete this file.
+	/* Darklight Backgrounds */
+	--darklight-bg-light: #ffffff;
+	--darklight-bg-dark: #181818;
+	--darklight-bg-cyberpunk: #120f1d;
+	--darklight-grid-size: 32px;
+}
 
-*/
+/* ==========================
+   LIGHT THEME (Default)
+   ========================== */
+.darklight-theme-light {
+	--background-primary: var(--darklight-bg-light);
+	--text-normal: var(--darklight-pen-black);
+	--link-color: var(--darklight-pen-blue);
+	--hr-color: var(--darklight-pen-gray);
+	--checkbox-color: var(--darklight-pen-green);
+	color-scheme: light;
+}
+
+/* ==========================
+   DARK MODE THEME
+   ========================== */
+.darklight-theme-dark {
+	--background-primary: var(--darklight-bg-dark);
+	--text-normal: var(--darklight-pen-white);
+	--link-color: var(--darklight-pen-blue);
+	--hr-color: var(--darklight-pen-gray);
+	--checkbox-color: var(--darklight-pen-green);
+	color-scheme: dark;
+}
+
+/* ==========================
+   CYBERPUNK THEME
+   ========================== */
+.darklight-theme-cyberpunk {
+	--background-primary: var(--darklight-bg-cyberpunk);
+	--text-normal: var(--darklight-pen-green);
+	--link-color: var(--darklight-pen-purple);
+	--hr-color: var(--darklight-pen-red);
+	--checkbox-color: var(--darklight-pen-blue);
+	color-scheme: dark;
+}
+
+/* ==========================
+   GRID OVERLAY (Optional)
+   ========================== */
+.darklight-grid {
+	background-image: linear-gradient(
+		0deg,
+		transparent 0px,
+		var(--darklight-pen-gray) 1px,
+		var(--darklight-pen-gray) 2px,
+		transparent 3px
+	),
+	linear-gradient(
+		90deg,
+		transparent calc(var(--darklight-grid-size) - 3px),
+		var(--darklight-pen-gray) calc(var(--darklight-grid-size) - 2px),
+		var(--darklight-pen-gray) calc(var(--darklight-grid-size) - 1px),
+		transparent var(--darklight-grid-size)
+	);
+	background-size: var(--darklight-grid-size) var(--darklight-grid-size);
+}
